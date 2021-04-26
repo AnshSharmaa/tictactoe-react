@@ -3,8 +3,8 @@ import Square from '../Square'
 function Board() {
     const status = 'Next player: X';
 
-    function renderSquare(i) {
-        return <Square />;
+    const renderSquare = (i) => {
+        return <Square value={i} />;
     }
     return (
         <div>
